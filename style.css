@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+}
+
+.calc_container {
+    border: 2px solid darkslateblue;
+    height: 37vh;
+    width: 50vh;
+    margin: auto;
+    border-radius: 5%;
+    padding: 2% 2% 1% 1%;
+    background: url("img/steel.jpg");
+}
+
+.display_container {
+    height: 25%;
+    border-radius: 5%;
+    width: 100%;
+    border: 2px solid black;
+    background: url("img/steel2.jpg");
+    padding-bottom: 1%;
+}
+
+#display {
+    width: 97%;
+    height: 75%;
+    border-radius: 5%;
+    text-align: right;
+    font-size: 3em;
+    padding-bottom: 2%;
+    font-family: 'VT323', monospace, sans-serif;
+}
+
+#miniDisplay {
+    width: 97%;
+    height: 25%;
+    border-radius: 1.5%;
+    text-align: right;
+    font-weight: bold;
+    font-size: .8em;
+    padding-bottom: 1%;
+
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 2%;
+    border-radius: 10%;
+    border: 1px solid black;
+    padding: 1%;
+    width: 17%;
+    height: 17%;
+}
+
+.btn_container {
+ margin-left: 7%;
+}
+
+#row4 {
+    text-align: center;
+    margin-right: 9%;
+}
+
+#equal {
+    width: 34%;
+}
