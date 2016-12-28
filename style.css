@@ -58,10 +58,15 @@ button {
 }
 
 #row4 {
-    text-align: center;
-    margin-right: 9%;
+    text-align: right;
+margin-right: 9%;
 }
 
 #equal {
-    width: 34%;
+width: 40%;
+
+}
+
+#deci {
+    font-weight: normal;
 }
