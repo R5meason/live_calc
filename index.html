@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 </head>
 <body>
-
+<div id="holder">
 <div class="calc_container">
     <div class="display_container">
         <div id="miniDisplay"></div>
@@ -20,7 +20,8 @@
         <button class="operator" onclick="operator('-')">-</button>
         <button class="operator" onclick="operator('*')">*</button>
         <button class="operator" onclick="operator('/')">/</button>
-        <button class="clear" onClick="window.location.reload()">AC</button>
+        <!--<button class="clear" id="ac" onClick="window.location.reload()">AC</button>-->
+        <button class="clear" id="ac" onClick="allClear()">AC</button>
     </div>
     <div class="btn_container" id="row2">
         <button class="number" onclick="btnVal(1)">1</button>
@@ -41,6 +42,6 @@
         <button class="operator" id="equal" onclick="equal()">=</button>
     </div>
 </div>
-
+</div>
 </body>
 </html>

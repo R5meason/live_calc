@@ -83,7 +83,7 @@ var operator = function (math) {
 
 var equal = function () {
     if (num2.length <= "0") {
-        document.getElementById('display').innerText = num1;
+        document.getElementById('display').innerText = num1.join("");
     }
     else {
         document.getElementById('miniDisplay').innerText = " ";
@@ -105,20 +105,36 @@ var equal = function () {
         else if (operArr[0] === "/") {
             result = firstNum / secondNum;
         }
-        if (result.length < 16) {
-            document.getElementById('display').innerText = result;
-        }
-        else {
-            maximumNum = result.toString().substr(0, 15);
-            document.getElementById('display').innerText = maximumNum;
-            document.getElementById('miniDisplay').innerText = "MAX # OF CHARACTERS REACHED";
-        }
+        answer();
         num2 = [];
         num1 = [];
         operArr = [];
         num1.push(result);
-        decimalCheck2 = false
+        decimalCheck2 = false;
     }
 };
 
+var answer = function () {
+    var resultLength = result.toString();
 
+    if (resultLength.length <= 15) {
+        document.getElementById('display').innerText = result;
+
+    }
+    else {
+        maximumNum = result.toString().substr(0, 15);
+        document.getElementById('display').innerText = maximumNum;
+        document.getElementById('miniDisplay').innerText = "MAX # OF CHARACTERS REACHED";
+    }
+};
+
+var allClear = function () {
+    num1 = [];
+    num2 = [];
+    decimalCheck1 = false;
+    decimalCheck2 = false;
+    operArr = [];
+    result = 0;
+    lastOperatorEntered = null;
+    ready("reset")
+};
